@@ -43,9 +43,9 @@ const App = () => {
           placeholder="search for food..." 
           value={search} onChange={updateSearch}/>
 
-          <div className="searchButton" type="submit">
+          <button className="searchButton" type="submit">
             Search
-          </div>
+          </button>
         </form> 
 
       <div className="wrapper">
