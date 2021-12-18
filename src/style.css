@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f4f8;
+  color: #000; 
+  font-size: 8px;
+}
+
+
+.searchForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.searchBar{
+  box-shadow: rgba(0, 0, 0, 0.11);
+  background: #ffffff;
+  border-radius: 3px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  width: 70%;
+  border: none;
+  padding: 8px 10px;
+  margin-right: 5px;
+}
+
+.searchButton{
+  outline: none;
+  border: none;
+  background: #00CC66;
+  border-radius: 3px;
+  padding: 4px 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.recipes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.wrapper{
+  max-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.recipes-box{
+  border-radius: 10px;
+  box-shadow: 0px 5px rgb(71, 71, 71);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.recipes-box img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.recipes-box p{
+  padding: 0px 0px 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00CC66;
+}
+
+.recipes-box span{
+  color: #0066CC;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.recipes-box h3{
+  color: #0066CC;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .recipes{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .searchForm{
+    padding: 0px 10px;
+  }
+}
+
+
